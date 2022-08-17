@@ -2,12 +2,64 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>JavaScript Practice</title>
 </head>
 <body>
   <script>
     // Your JavaScript goes here!
-    console.log("Hello, World!")
+    //Practice using the console:
+    console.log("Hello, World!");
+
+    //practice declaring,initializing, and showing variables in console:
+    let admin;
+    let name = "John";
+    admin = name;
+    console.log(admin);
+
+    //practice rounding decimals to a certain number of places:
+    const lotsOfDecimal = 1.7665849587658493;
+    lotsOfDecimal;
+    const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+    console.log(twoDecimalPlaces);
+
+    //changing data input from string to number:
+    let myNumber = "74";
+    myNumber = Number(myNumber) + 3;
+    console.log(myNumber);
+
+    //practice with operators
+    console.log(23+97);
+    console.log(1+2+3+4+5+6);
+    console.log((4 + 6 + 9) / 77);
+
+    //practice with variables
+    let a = 10;
+    console.log(a);
+    a *= 9;
+    let b = 7 * a;
+    console.log(b);
+
+    let max = 57;
+    let actual = max - 13;
+    let percentage = actual / max;
+    console.log(percentage);
+
+    //creating strings
+    const string = "The revolution will not be televised.";
+    console.log(string);
+
+    //escaping characters in a string
+    const bigmouth = 'I\'ve got no right to take my place...';
+    console.log(bigmouth);
+
+    //to concatenate strings, use a template literal:
+    const fname = "Chris";
+    const greeting = `Hello, ${fname}`;
+    console.log(greeting);
+    const one = "Hello, ";
+    const joined = `${one}${fname}`;
+    console.log(joined);
+
   </script>
 </body>
 </html>
