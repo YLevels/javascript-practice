@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+
+    //takes one number and returns that number + 7.
+    function add7(number) {
+        console.log(number + 7)
+    }
+
+    add7(3);
+
+    //takes two numbers and returns their product.
+    function multiply(number1, number2) {
+        console.log(number1 * number2)
+    }
+
+    multiply(2,3);
+
+    //takes a string and returns that string with only the first letter capitalized.
+    function capitalize(word) {
+        let text = word.toLowerCase();
+        let fLetter = text.slice(0,1);
+        fLetter = fLetter.toUpperCase();
+        let restOfWord = text.slice(1);
+        let result = fLetter + restOfWord;
+        console.log(result);
+    }
+
+    capitalize("hello");
+    capitalize("HELLO");
+    capitalize("tHiSwOrD");
+
+    //takes a string and returns the very last letter
+    function lastLetter(word) {
+        let result = word.slice(-1);
+        console.log(result);
+    }
+
+    lastLetter("today");
+  </script>
+</body>
+</html>
